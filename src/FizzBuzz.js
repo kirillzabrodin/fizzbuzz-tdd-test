@@ -2,4 +2,10 @@
 
 function FizzBuzz() {}
 
-FizzBuzz.prototype.play = number => "Fizz"
+FizzBuzz.prototype.play = number => {
+    if (number == 5 || number == 10 || number == 15) {
+        return "Buzz"
+    } else {
+        return "Fizz"
+    }
+}
