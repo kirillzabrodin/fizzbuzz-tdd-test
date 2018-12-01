@@ -3,9 +3,9 @@
 function FizzBuzz() {}
 
 FizzBuzz.prototype.play = number => {
-    if (number == 5 || number == 10 || number == 20) {
-        return "Buzz"
-    } else {
-        return "Fizz"
-    }
+    let output = ""
+    if (!(number % 3)) output += 'Fizz'
+    if (!(number % 5)) output += 'Buzz'
+    if (output === "") output = number
+    return output
 }

@@ -39,4 +39,37 @@ describe('FizzBuzz', () => {
         })
 
     })
+
+    describe('returns FizzBuzz for numbers that are divisible by 15', () => {
+
+        it('returns FizzBuzz for 15', () => {
+            expect(game.play(15)).toBe('FizzBuzz')
+        })
+
+        it('returns FizzBuzz for 30', () => {
+            expect(game.play(30)).toBe('FizzBuzz')
+        })
+
+        it('returns FizzBuzz for 45', () => {
+            expect(game.play(45)).toBe('FizzBuzz')
+        })
+
+    })
+
+    describe('return number if not divisible by 5 or 3', () => {
+
+        it('returns 8 for 8', () => {
+            expect(game.play(8)).toBe(8)
+        })
+
+        it('returns 31 for 31', () => {
+            expect(game.play(31)).toBe(31)
+        })
+
+        it('returns 101 for 101', () => {
+            expect(game.play(101)).toBe(101)
+        })
+
+    })
+
 })
